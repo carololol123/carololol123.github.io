@@ -1,0 +1,62 @@
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Toronto Social Housing Apartment Evaluation</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <!-- Mapbox JS API !-->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+  <!-- Mapbox CSS!-->
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+  <!-- Google Font CSS!-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+  <!-- A bit of CSS to define the extent and position of the map-->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /*CSS for the html element with id `map`*/
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='map'></div>
+  <div class="map-overlay" id="features">
+    <h2>Toronto housing</h2>
+    <div id="pd">
+      <p>Click on the icon to see details of the housing. Overall score is presented on the map.
+
+        Data: <a href='https://open.toronto.ca/dataset/apartment-building-evaluation/'>Housing Data </a> in City of Toronto, 2021
+      </p>
+
+    </div>
+
+</html>
+<script>
+  // The value for 'accessToken' begins with 'pk...'
+  mapboxgl.accessToken = 'pk.eyJ1IjoiY2Fyb2xvbCIsImEiOiJjbGNxOXpldnowM3d6M3VwMTZpMjQ5bW8wIn0.xePoV-goEeb0x8u8L23J0Q';
+  // Define a map object by initialising a Map from Mapbox
+  // Define some initial parameters
+  // https://docs.mapbox.com/mapbox-gl-js/api/map/
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/carolol/cldg5q4nv000d01rnjqo43m81',
+    center: [-79.3832, 43.6532],
+    zoom: 9
+  });
+</script>
+
+</body>
+
+</html>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css' type='text/css' />

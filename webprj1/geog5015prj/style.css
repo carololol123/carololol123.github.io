@@ -1,0 +1,87 @@
+/*Style for h3*/
+h3 {
+  border-top: 15px blue;
+  font-family: Lato, sans-serif;
+}
+
+/*Style for p*/
+p {
+  font-size: 15px;
+  font-family: Lato, sans-serif;
+}
+
+/*Style for the pop-up*/
+.my-popup .mapboxgl-popup-content {
+  width: 200px;
+  background: rgba(83, 92, 104, 0.9);
+  border-top: 50px black;
+  padding: 20px;
+  color: white;
+}
+.mapboxgl-ctrl-geocoder {
+  width: 280px !important;
+}
+h1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #2dc4b2;
+}
+
+#console {
+  position: absolute;
+  width: 280px;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.session {
+  margin-bottom: 20px;
+}
+
+.row {
+  height: 12px;
+  width: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #cc6699;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#features {
+  top: 0;
+  height: 150px;
+  margin-top: 20px;
+  width: 260px;
+}
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  line-height: 18px;
+  height: 150px;
+  margin-bottom: 40px;
+  width: 100px;
+}
